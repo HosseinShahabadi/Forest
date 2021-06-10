@@ -1,0 +1,300 @@
+@import './reset.min.css';
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('../fonts/vazir.eot') format('eot'),
+    url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff2') format('woff2'),
+    url('../fonts/vazir.woff') format('woff');
+}
+
+body {
+  font-family: 'Vazir';
+  direction: rtl;
+}
+
+input,
+button {
+  font-family: 'Vazir';
+}
+
+/* ============================== Header =============================== */
+
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+header nav {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #b9b9b9;
+}
+
+header .sky {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+header .moon {
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  width: 150px;
+}
+
+header .forest {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* ============================== Wolf =============================== */
+
+.wolf {
+  height: 700px;
+  width: 100%;
+  background-image: url("../img/wolf.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.wolf .wolf-title {
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+}
+
+.wolf .wolf-title h1 {
+  font-size: 30px;
+}
+
+.wolf .wolf-title p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.wolf .container {
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  left: 35%;
+}
+
+.wolf .wolf-content {
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 900;
+  color: #0D081E;
+}
+
+.wolf .wolf-s-content {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 900;
+  color: #0D081E;
+  display: none;
+}
+
+.wolf .wolf-xs-content {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 900;
+  color: #0D081E;
+  display: none;
+}
+
+/* ============================== Monkey =============================== */
+
+.monkey {
+  width: 100%;
+  height: 700px;
+  background-image: url('../img/monk.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.monkey .container {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  bottom: 0;
+  left: 10%;
+}
+
+.monkey .monkey-title {
+  color: #0D081E;
+  text-align: center;
+  padding-right: 100px;
+}
+
+.monkey .monkey-title h1 {
+  font-size: 40px;
+}
+
+.monkey .monkey-title p {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.monkey .monkey-content {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 900;
+  margin: 230px 20% 0 0;
+  color: #fff;
+}
+
+.monkey .monkey-s-content {
+  display: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 700;
+  margin: 400px 0 0 0;
+  text-align: center;
+}
+
+/* ============================== Footer =============================== */
+
+footer {
+  background-image: url('../img/lionbg.svg');
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  width: 100%;
+}
+
+footer .overlay {
+  overflow: auto;
+  background-color: rgba(22, 2, 31, 0.918);
+}
+
+footer .overlay .footer-desc {
+  color: #fff;
+  width: 70%;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+footer .overlay .footer-desc .title {
+  padding-top: 150px;
+}
+
+footer .overlay .footer-desc .title h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+footer .overlay .footer-desc .title p {
+  font-size: 25px;
+  margin-top: 35px;
+  margin-bottom: 80px;
+  line-height: 50px;
+}
+
+footer .overlay .footer-desc .form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+footer .overlay .footer-desc .form input {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+footer .overlay .footer-desc .form button {
+  width: 220px;
+  padding: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+
+footer .overlay .footer-desc .form button:hover {
+  background-color: rgb(22, 2, 31);
+  color: #fff;
+}
+
+footer .overlay .footer-desc .social {
+  width: 200px;
+  margin: 100px auto 0;
+}
+
+footer .overlay .footer-desc .social ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+footer .overlay .footer-desc .social a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+
+footer .overlay .footer-desc .social a:hover {
+  color: #b9b9b9;
+}
+
+footer .overlay .footer-desc .content {
+  width: 500px;
+  margin: 40px auto 8vh;
+}
+
+footer .overlay .footer-desc .content p {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 900;
+}
